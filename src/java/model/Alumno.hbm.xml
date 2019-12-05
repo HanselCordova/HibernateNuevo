@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05/12/2019 09:47:30 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Alumno" table="alumno" catalog="bdhibernate" optimistic-lock="version">
+        <id name="idAlum" type="java.lang.Integer">
+            <column name="idAlum" />
+            <generator class="identity" />
+        </id>
+        <property name="nomAlum" type="string">
+            <column name="nomAlum" length="50" />
+        </property>
+        <property name="nota" type="java.lang.Integer">
+            <column name="nota" />
+        </property>
+    </class>
+</hibernate-mapping>
